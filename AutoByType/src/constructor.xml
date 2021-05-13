@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:p="http://www.springframework.org/schema/p" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"> 
+ 
+  <bean id = "emp1" class="constructormode.Employee" autowire ="constructor">
+ <constructor-arg name="empNo" value="1" ></constructor-arg>
+ <constructor-arg name="eName" value="Manasa" ></constructor-arg>
+  <constructor-arg><ref bean = "dept"/></constructor-arg>
+ </bean>
+  <bean id = "dept" class = "constructormode.Department">
+ <constructor-arg name ="deptNo" value="100"></constructor-arg>
+ <constructor-arg name = "dName" value="HR"></constructor-arg>
+ </bean>  
+
+</beans>
