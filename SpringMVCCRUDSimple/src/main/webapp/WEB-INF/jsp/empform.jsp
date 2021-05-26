@@ -16,6 +16,11 @@
           <td>Designation :</td>  
           <td><form:input path="designation" /></td>
          </tr> 
+         <tr>
+         <td>Photo</td>  
+          <td><form:input path="image" type = "file" value=""/></td>
+         </tr> 
+          
          <tr>  
           <td> </td>  
           <td><input type="submit" value="Save" /></td>  

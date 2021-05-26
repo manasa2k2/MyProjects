@@ -1,10 +1,11 @@
-package com.javatpoint.beans;  
+package com.beans;  
   
 public class Emp {  
 private int id;  
 private String name;  
 private float salary;  
-private String designation;  
+private String designation;
+private String image;
   
 public int getId() {  
     return id;  
@@ -29,6 +30,14 @@ public String getDesignation() {
 }  
 public void setDesignation(String designation) {  
     this.designation = designation;  
-}  
+}
+public String getImage() {
+	return image;
+}
+public void setImage(String image) {
+	this.image = image;
+}
+
+
   
 }  
